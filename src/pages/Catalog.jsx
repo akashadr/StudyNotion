@@ -125,7 +125,7 @@ function Catalog() {
         <div className="py-8">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             {catalogPageData?.data?.mostSellingCourses
-              ?.slice(0, 4)
+              ?.slice(0, 10)
               .map((course, i) => (
                 <Course_Card course={course} key={i} Height={"h-[400px]"} />
               ))}
