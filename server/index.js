@@ -56,6 +56,13 @@ app.get("/", (req, res) => {
   })
 })
 
+app.get("/api/v1", (req, res) => {
+  return res.json({
+    success: true,
+    message: "Your server is up and running for api v1..."
+  });
+});
+
 // Listening to the server
 app.listen(PORT, () => {
   console.log(`App is listening at ${PORT}`)
